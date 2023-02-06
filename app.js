@@ -364,10 +364,6 @@ close.addEventListener("click", () => {
     containGetproject.style.display = "none"
 })
 
-window.onload = function () {
-    window.scrollTo(0, 0);
-}
-
 var containerMessage = document.getElementById("container-message")
 
 formContact.addEventListener("submit", (e) => {
