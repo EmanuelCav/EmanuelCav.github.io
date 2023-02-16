@@ -86,6 +86,16 @@ var projectsJS = [{
 }]
 
 var projectsPy = [{
+    title: "Countries",
+    description: "Python, Pandas y Matplotlib.",
+    content: "Analisis de datos de países.",
+    link: "https://github.com/EmanuelCav/Countries"
+}, {
+    title: "Premier League",
+    description: "Python, NumPy y Pandas.",
+    content: "Analisis de datos de la Premier League temporada 2021/22.",
+    link: "https://github.com/EmanuelCav/Premier-League"
+}, {
     title: "Dataframe generator",
     description: "Python, Pandas.",
     content: "Software para la creación de marcos de datos.",
