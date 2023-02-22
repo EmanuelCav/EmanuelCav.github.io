@@ -30,6 +30,12 @@ var projectsJS = [{
     content: "Plataforma web para compatir y observar vlogs.",
     link: "https://github.com/EmanuelCav/Vlogs"
 }, {
+    title: "Critics",
+    description: "ReactJs, Go, Fiber y MongoDB.",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1677073032/critics_exvlur.png",
+    content: "Aplicación web para compartir criticas acerca de un tema en específico.",
+    link: "https://github.com/EmanuelCav/Critics"
+}, {
     title: "Polls",
     description: "Stack MERN, Redux.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/polls_xawewm.png",
@@ -65,6 +71,12 @@ var projectsJS = [{
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/contacts_glvfsk.png",
     content: "Plataforma web para la subida de contactos.",
     link: "https://github.com/EmanuelCav/Contacts"
+}, {
+    title: "Notes",
+    description: "Angular, Go, Gorm y Postgres.",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1677073122/notes_exofgs.png",
+    content: "Aplicacion web para la creación de notas.",
+    link: "https://github.com/EmanuelCav/Notes"
 }, {
     title: "World Cup 2022 prediction",
     description: "Javascript, HTML y CSS.",
