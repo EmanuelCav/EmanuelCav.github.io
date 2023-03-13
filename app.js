@@ -97,43 +97,6 @@ var projectsJS = [{
     link: "https://github.com/EmanuelCav/Tienda-Papelarios"
 }]
 
-var projectsPy = [{
-    title: "Countries",
-    description: "Python, Pandas y Matplotlib.",
-    content: "Analisis de datos de países.",
-    link: "https://github.com/EmanuelCav/Countries"
-}, {
-    title: "Premier League",
-    description: "Python, NumPy y Pandas.",
-    content: "Analisis de datos de la Premier League temporada 2021/22.",
-    link: "https://github.com/EmanuelCav/Premier-League"
-}, {
-    title: "Dataframe generator",
-    description: "Python, Pandas.",
-    content: "Software para la creación de marcos de datos.",
-    link: "https://github.com/EmanuelCav/Dataframe-generator"
-}, {
-    title: "Fixture generator on Excel",
-    description: "Python, NumPy y Pandas.",
-    content: "Aplicación para la creación de un fixture y su respectiva tabla de posiciones en Excel.",
-    link: "https://github.com/EmanuelCav/Excel-Fixture-Generator"
-}, {
-    title: "Read Files",
-    description: "Python, Pandas.",
-    content: "Software para la lectura de archivos con marco de datos.",
-    link: "https://github.com/EmanuelCav/Read-files"
-}, {
-    title: "Calculator",
-    description: "Python, Tkinter.",
-    content: "Aplicación de escritorio de una calculadora.",
-    link: "https://github.com/EmanuelCav/Calculator"
-}, {
-    title: "Hash Generator",
-    description: "Python, TKinter.",
-    content: "Aplicación de escritorio para la generación de un hash.",
-    link: "https://github.com/EmanuelCav/Hash-generator"
-}]
-
 var firstImageProject = 0
 var lastImageProject = 4
 
@@ -200,11 +163,6 @@ function showProjectsPy() {
         containProject.className = "contain-project"
         containProject.id = id
 
-        // var imageContainProject = document.createElement("img")
-        // imageContainProject.src = projectsPy[i].image
-        // imageContainProject.alt = projectsPy[i].title
-        // imageContainProject.className = "image-project"
-
         var titleContainProject = document.createElement("h1")
         titleContainProject.innerHTML += projectsPy[i].title
         titleContainProject.className = "title-project"
@@ -217,7 +175,6 @@ function showProjectsPy() {
         contentContainProject.innerHTML += projectsPy[i].content
         contentContainProject.className = "description-project"
 
-        // containProject.appendChild(imageContainProject)
         containProject.appendChild(titleContainProject)
         containProject.appendChild(descriptionContainProject)
         containProject.appendChild(contentContainProject)
@@ -228,18 +185,7 @@ function showProjectsPy() {
         id++
     }
 }
-function isLeftOrRightProjectsPy() {
-    if (firstImageProjectPy == 0) {
-        leftProjectPy.style.display = "none"
-    } else {
-        leftProjectPy.style.display = "block"
-    }
-    if (lastImageProjectPy == projectsPy.length) {
-        rightProjectPy.style.display = "none"
-    } else {
-        rightProjectPy.style.display = "block"
-    }
-}
+
 function getProject(i, id) {
     containerGetProject.style.display = "block"
     containGetproject.style.display = "block"
@@ -293,9 +239,6 @@ function getProject(i, id) {
 
 isLeftOrRightProjects()
 showProjects()
-
-isLeftOrRightProjectsPy()
-showProjectsPy()
 
 function validForm(name, email, description) {
 
@@ -355,24 +298,6 @@ rightProject.addEventListener("click", () => {
     lastImageProject++
     isLeftOrRightProjects()
     showProjects()
-})
-leftProjectPy.addEventListener("click", () => {
-    while (containerProjectsPy.firstChild) {
-        containerProjectsPy.removeChild(containerProjectsPy.firstChild)
-    }
-    firstImageProjectPy--
-    lastImageProjectPy--
-    isLeftOrRightProjectsPy()
-    showProjectsPy()
-})
-rightProjectPy.addEventListener("click", () => {
-    while (containerProjectsPy.firstChild) {
-        containerProjectsPy.removeChild(containerProjectsPy.firstChild)
-    }
-    firstImageProjectPy++
-    lastImageProjectPy++
-    isLeftOrRightProjectsPy()
-    showProjectsPy()
 })
 
 close.addEventListener("click", () => {

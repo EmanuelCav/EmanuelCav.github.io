@@ -448,6 +448,9 @@ body {
 .text-contact {
     font-size: 24px;
     text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .button-form {
