@@ -256,11 +256,6 @@ function validForm(name, email, description) {
         return msg
     }
 
-    if (description.length > 200) {
-        msg = "Asegurate que la descripción tenga menos de 200 caracteres."
-        return msg
-    }
-
     for (var i = 0; i < description.length; i++) {
         if (description[i] == "<" || description[i] == ">") {
             msg = 'En la descripcion los caracteres especiales como "<,>" no estan permitidos'
