@@ -5,25 +5,25 @@ const containerDropDown = document.getElementById("container-dropdown")
 
 var projectsJS = [{
     title: "Surveys",
-    description: "Stack MERN y Redux.",
+    description: "Stack MERN y Redux y Typescript..",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094965/surveys_hkztfb.png",
     content: "Plataforma web para publicar y responder encuestas.",
     link: "https://surveys-ef4r.onrender.com"
 }, {
     title: "Social Media",
-    description: "Stack MERN, Redux.",
+    description: "Stack MERN, Redux y Typescript..",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094966/social_media_a7cugi.png",
     content: "Aplicación web de una red social.",
     link: "https://socialmedia-33gt.onrender.com"
 }, {
-    title: "eCommerce Web",
-    description: "Stack MERN, Redux y Bootstrap.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/eCommerce_mog4sq.png",
-    content: "Pagina web de comercio electrónico en linea.",
-    link: "https://github.com/EmanuelCav/eCommerce-Web"
+    title: "Emails",
+    description: "Stack MERN, Sockeo.io y Typescript.",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Emails_x0hbr7.png",
+    content: "Plataforma web para el recibo y envio de correos electronicos.",
+    link: "https://emails-kn32.onrender.com"
 }, {
     title: "Vlogs",
-    description: "Stack MERN, Redux con Typescript.",
+    description: "Stack MERN, Redux y Typescript.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/vlogs_no6jpp.png",
     content: "Plataforma web para compatir y observar vlogs.",
     link: "https://github.com/EmanuelCav/Vlogs"
@@ -40,11 +40,11 @@ var projectsJS = [{
     content: "Aplicación web para la creación y particiáción de encuestas.",
     link: "https://github.com/EmanuelCav/Poll"
 }, {
-    title: "Emails",
-    description: "Stack MERN y Typescript.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Emails_x0hbr7.png",
-    content: "Plataforma web para el recibo y envio de correos electronicos.",
-    link: "https://github.com/EmanuelCav/Emails"
+    title: "eCommerce Web",
+    description: "Stack MERN, Redux y Bootstrap.",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/eCommerce_mog4sq.png",
+    content: "Pagina web de comercio electrónico en linea.",
+    link: "https://github.com/EmanuelCav/eCommerce-Web"
 }, {
     title: "Quiz Game",
     description: "Stack MERN.",
@@ -122,7 +122,7 @@ for (var i = 0; i < projectsJS.length; i++) {
     descriptionContainProject.innerHTML += projectsJS[i].description
     descriptionContainProject.className = "description-project"
 
-    
+
     var contentContainProject = document.createElement("p")
     contentContainProject.innerHTML += projectsJS[i].content
     contentContainProject.className = "content-project"
