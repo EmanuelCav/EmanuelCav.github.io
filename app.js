@@ -1,23 +1,21 @@
-const leftProject = document.getElementById("left-project")
-const rightProject = document.getElementById("right-project")
-const leftProjectPy = document.getElementById("left-project-py")
-const rightProjectPy = document.getElementById("right-project-py")
-
 const containerProjects = document.getElementById("container-projects")
-const containerProjectsPy = document.getElementById("container-projects-py")
-
-const containerGetProject = document.getElementById("container-getproject")
-const containGetproject = document.getElementById("contain-getproject")
-const containerInfoGetProject = document.getElementById("container-info-getproject")
-const close = document.getElementById("close")
-
-const formContact = document.getElementById("form-contact")
-const closeMessage = document.getElementById("close-message")
 
 const headerIcon = document.getElementById("header-icon")
 const containerDropDown = document.getElementById("container-dropdown")
 
 var projectsJS = [{
+    title: "Surveys",
+    description: "Stack MERN y Redux.",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094965/surveys_hkztfb.png",
+    content: "Plataforma web para publicar y responder encuestas.",
+    link: "https://surveys-ef4r.onrender.com"
+}, {
+    title: "Social Media",
+    description: "Stack MERN, Redux.",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094966/social_media_a7cugi.png",
+    content: "Aplicación web de una red social.",
+    link: "https://socialmedia-33gt.onrender.com"
+}, {
     title: "eCommerce Web",
     description: "Stack MERN, Redux y Bootstrap.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/eCommerce_mog4sq.png",
@@ -25,7 +23,7 @@ var projectsJS = [{
     link: "https://github.com/EmanuelCav/eCommerce-Web"
 }, {
     title: "Vlogs",
-    description: "Stack MERN, Redux y Typescript.",
+    description: "Stack MERN, Redux con Typescript.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/vlogs_no6jpp.png",
     content: "Plataforma web para compatir y observar vlogs.",
     link: "https://github.com/EmanuelCav/Vlogs"
@@ -59,292 +57,88 @@ var projectsJS = [{
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/anecdotes_wqshbw.png",
     content: "Pagina web para compartir anecdotas.",
     link: "https://github.com/EmanuelCav/Anecdotes"
-}, {
+}
+    , {
     title: "Posts",
     description: "Angular, Mysql y Bootstrap.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/Posts_trglhh.png",
     content: "Pagina web para la subida de publicaciones.",
     link: "https://github.com/EmanuelCav/Posts"
-}, {
-    title: "Contacts",
-    description: "Stack PEAN.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/contacts_glvfsk.png",
-    content: "Plataforma web para la subida de contactos.",
-    link: "https://github.com/EmanuelCav/Contacts"
-}, {
-    title: "Notes",
-    description: "Angular, Go, Gorm y Postgres.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1677073122/notes_exofgs.png",
-    content: "Aplicacion web para la creación de notas.",
-    link: "https://github.com/EmanuelCav/Notes"
-}, {
-    title: "World Cup 2022 prediction",
-    description: "Javascript, HTML y CSS.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/World_rkgimr.png",
-    content: "Plataforma web para simular una predicción del Mundial de Futbol 2022.",
-    link: "https://github.com/EmanuelCav/World-Cup-2022"
-}, {
-    title: "Ta te ti",
-    description: "Javascript, HTML y CSS.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Tateti_ug6xwr.png",
-    content: "Pagina web para jugar al ta te ti.",
-    link: "https://github.com/EmanuelCav/Tic-Tac-Toe"
-}, {
-    title: "Papelarios",
-    description: "Javascript, HTML y CSS.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/papelarios_ryeizm.png",
-    content: "Pagina web de comercio electronico.",
-    link: "https://github.com/EmanuelCav/Tienda-Papelarios"
-}]
+},
+    // {
+    //     title: "Contacts",
+    //     description: "Stack PEAN.",
+    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/contacts_glvfsk.png",
+    //     content: "Plataforma web para la subida de contactos.",
+    //     link: "https://github.com/EmanuelCav/Contacts"
+    // }, {
+    //     title: "Notes",
+    //     description: "Angular, Go, Gorm y Postgres.",
+    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1677073122/notes_exofgs.png",
+    //     content: "Aplicacion web para la creación de notas.",
+    //     link: "https://github.com/EmanuelCav/Notes"
+    // }, {
+    //     title: "World Cup 2022 prediction",
+    //     description: "Javascript, HTML y CSS.",
+    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/World_rkgimr.png",
+    //     content: "Plataforma web para simular una predicción del Mundial de Futbol 2022.",
+    //     link: "https://github.com/EmanuelCav/World-Cup-2022"
+    // }, {
+    //     title: "Ta te ti",
+    //     description: "Javascript, HTML y CSS.",
+    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Tateti_ug6xwr.png",
+    //     content: "Pagina web para jugar al ta te ti.",
+    //     link: "https://github.com/EmanuelCav/Tic-Tac-Toe"
+    // }, {
+    //     title: "Papelarios",
+    //     description: "Javascript, HTML y CSS.",
+    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/papelarios_ryeizm.png",
+    //     content: "Pagina web de comercio electronico.",
+    //     link: "https://github.com/EmanuelCav/Tienda-Papelarios"
+    // }
+]
 
-var firstImageProject = 0
-var lastImageProject = 4
+var id = 0
 
-var firstImageProjectPy = 0
-var lastImageProjectPy = 4
+for (var i = 0; i < projectsJS.length; i++) {
 
-const addEvent = (id, i, event = 'click') => {
-    document.getElementById(id).addEventListener(event, function () {
-        getProject(i, id)
-    });
+    var linkProject = document.createElement('a')
+    linkProject.className = "redirect-project"
+
+    var containProject = document.createElement("div")
+    containProject.className = "contain-project"
+    containProject.id = id
+
+    var imageContainProject = document.createElement("img")
+    imageContainProject.src = projectsJS[i].image
+    imageContainProject.alt = projectsJS[i].title
+    imageContainProject.className = "image-project"
+
+    var titleContainProject = document.createElement("h1")
+    titleContainProject.innerHTML += projectsJS[i].title
+    titleContainProject.className = "title-project"
+
+    var descriptionContainProject = document.createElement("p")
+    descriptionContainProject.innerHTML += projectsJS[i].description
+    descriptionContainProject.className = "description-project"
+
+    
+    var contentContainProject = document.createElement("p")
+    contentContainProject.innerHTML += projectsJS[i].content
+    contentContainProject.className = "content-project"
+
+    containProject.appendChild(imageContainProject)
+    containProject.appendChild(titleContainProject)
+    containProject.appendChild(descriptionContainProject)
+    containProject.appendChild(contentContainProject)
+
+    linkProject.setAttribute('href', projectsJS[i].link)
+
+    linkProject.appendChild(containProject)
+    containerProjects.appendChild(linkProject)
+
+    id++
 }
-
-function showProjects() {
-
-    var id = 0
-
-    for (var i = firstImageProject; i < lastImageProject; i++) {
-        var containProject = document.createElement("div")
-        containProject.className = "contain-project"
-        containProject.id = id
-
-        var imageContainProject = document.createElement("img")
-        imageContainProject.src = projectsJS[i].image
-        imageContainProject.alt = projectsJS[i].title
-        imageContainProject.className = "image-project"
-
-        var titleContainProject = document.createElement("h1")
-        titleContainProject.innerHTML += projectsJS[i].title
-        titleContainProject.className = "title-project"
-
-        var descriptionContainProject = document.createElement("p")
-        descriptionContainProject.innerHTML += projectsJS[i].description
-        descriptionContainProject.className = "description-project"
-
-        containProject.appendChild(imageContainProject)
-        containProject.appendChild(titleContainProject)
-        containProject.appendChild(descriptionContainProject)
-
-        containerProjects.appendChild(containProject)
-
-        addEvent(id, i)
-        id++
-    }
-
-}
-function isLeftOrRightProjects() {
-    if (firstImageProject == 0) {
-        leftProject.style.display = "none"
-    } else {
-        leftProject.style.display = "block"
-    }
-    if (lastImageProject == projectsJS.length) {
-        rightProject.style.display = "none"
-    } else {
-        rightProject.style.display = "block"
-    }
-}
-function showProjectsPy() {
-
-    var id = 4
-
-    for (var i = firstImageProjectPy; i < lastImageProjectPy; i++) {
-        var containProject = document.createElement("div")
-        containProject.className = "contain-project"
-        containProject.id = id
-
-        var titleContainProject = document.createElement("h1")
-        titleContainProject.innerHTML += projectsPy[i].title
-        titleContainProject.className = "title-project"
-
-        var descriptionContainProject = document.createElement("p")
-        descriptionContainProject.innerHTML += projectsPy[i].description
-        descriptionContainProject.className = "description-project"
-
-        var contentContainProject = document.createElement("p")
-        contentContainProject.innerHTML += projectsPy[i].content
-        contentContainProject.className = "description-project"
-
-        containProject.appendChild(titleContainProject)
-        containProject.appendChild(descriptionContainProject)
-        containProject.appendChild(contentContainProject)
-
-        containerProjectsPy.appendChild(containProject)
-
-        addEvent(id, i)
-        id++
-    }
-}
-
-function getProject(i, id) {
-    containerGetProject.style.display = "block"
-    containGetproject.style.display = "block"
-
-    const titleProject = document.createElement("h1")
-    if (id >= 4) {
-        titleProject.innerHTML += projectsPy[i].title
-    } else {
-        titleProject.innerHTML += projectsJS[i].title
-    }
-    titleProject.className = "title-getproject"
-
-    const imageProject = document.createElement("img")
-    if (id < 4) {
-        imageProject.src = projectsJS[i].image
-        imageProject.alt = projectsJS[i].title
-        imageProject.className = "image-getproject"
-    }
-
-    const descriptionProject = document.createElement("p")
-    if (id >= 4) {
-        descriptionProject.innerHTML += projectsPy[i].description
-    } else {
-        descriptionProject.innerHTML += projectsJS[i].description
-    }
-    descriptionProject.className = "text-getproject"
-
-    const contentProject = document.createElement("p")
-    if (id >= 4) {
-        contentProject.innerHTML += projectsPy[i].content
-    } else {
-        contentProject.innerHTML += projectsJS[i].content
-    }
-    contentProject.className = "text-getproject"
-
-    const linkProject = document.createElement("a")
-    linkProject.innerHTML += "Haz click aqui para visualizar el código"
-    if (id >= 4) {
-        linkProject.href = projectsPy[i].link
-    } else {
-        linkProject.href = projectsJS[i].link
-    }
-    linkProject.className = "link-project"
-
-    containerInfoGetProject.appendChild(titleProject)
-    containerInfoGetProject.appendChild(imageProject)
-    containerInfoGetProject.appendChild(descriptionProject)
-    containerInfoGetProject.appendChild(contentProject)
-    containerInfoGetProject.appendChild(linkProject)
-}
-
-isLeftOrRightProjects()
-showProjects()
-
-function validForm(name, email, description) {
-
-    var msg
-
-    if (!name || !email || !description) {
-        msg = "Asegurate de completar todos los campos."
-        return msg
-    }
-
-    var validEmail = validateEmail(email)
-
-    if (!validEmail) {
-        msg = "Asegurate de haber escrito bien la direccion de correo electronico."
-        return msg
-    }
-
-    for (var i = 0; i < description.length; i++) {
-        if (description[i] == "<" || description[i] == ">") {
-            msg = 'En la descripcion los caracteres especiales como "<,>" no estan permitidos'
-            return msg
-        }
-    }
-
-    msg = "Mensaje enviado correctamente"
-
-    return msg
-}
-
-const validateEmail = (email) => {
-    return String(email)
-        .toLowerCase()
-        .match(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
-};
-
-leftProject.addEventListener("click", () => {
-    while (containerProjects.firstChild) {
-        containerProjects.removeChild(containerProjects.firstChild)
-    }
-    firstImageProject--
-    lastImageProject--
-    isLeftOrRightProjects()
-    showProjects()
-})
-rightProject.addEventListener("click", () => {
-    while (containerProjects.firstChild) {
-        containerProjects.removeChild(containerProjects.firstChild)
-    }
-    firstImageProject++
-    lastImageProject++
-    isLeftOrRightProjects()
-    showProjects()
-})
-
-close.addEventListener("click", () => {
-    while (containerInfoGetProject.lastChild) {
-        if (containerInfoGetProject.lastChild.nodeName == "svg") {
-            break
-        }
-        containerInfoGetProject.removeChild(containerInfoGetProject.lastChild)
-    }
-    containerGetProject.style.display = "none"
-    containGetproject.style.display = "none"
-})
-
-var containerMessage = document.getElementById("container-message")
-
-formContact.addEventListener("submit", (e) => {
-    e.preventDefault()
-
-    var name = document.getElementById("name").value
-    var email = document.getElementById("email").value
-    var description = document.getElementById("description").value
-
-    var valid = validForm(name, email, description)
-
-    var textMessage = document.getElementById("text-message")
-
-    if (valid == "Mensaje enviado correctamente") {
-        containerMessage.style.display = "flex"
-        containerMessage.style.backgroundColor = "#6f6"
-        Email.send({
-            SecureToken: "f07b59b4-1d8c-49d6-93ad-0ad62103837c",
-            To: 'cavallinema@gmail.com',
-            From: 'cavallinema@gmail.com',
-            Subject: `New message from ${name}. The email is ${email}`,
-            Body: description
-        })
-        document.getElementById("name").value = ""
-        document.getElementById("email").value = ""
-        document.getElementById("description").value = ""
-    } else {
-        containerMessage.style.display = "flex"
-        containerMessage.style.backgroundColor = "#f66"
-    }
-
-    textMessage.innerHTML = ""
-    textMessage.innerHTML += `${valid}`
-
-})
-
-closeMessage.addEventListener("click", () => {
-    containerMessage.style.display = "none"
-})
 
 var isDrowDown = false
 

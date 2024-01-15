@@ -173,6 +173,7 @@ body {
     color: #fff;
     font-size: 22px;
     line-height: 30px;
+    margin-top: 16px;
 }
 
 .contain-image-about {
@@ -206,8 +207,7 @@ body {
     text-align: center;
     border-radius: 12px;
     border: 1px solid #ddd;
-    flex: 1;
-    -ms-flex: 1;
+    width: 225px;
 }
 
 .image-skill {
@@ -226,16 +226,15 @@ body {
     width: 100%;
     padding: 24px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .contain-project {
-    width: 248px;
+    width: 356px;
     border: 1px solid #ddd;
     padding: 8px 12px;
-    margin: 24px;
     height: 387px;
     word-wrap: break-word;
     -ms-word-wrap: break-word;
@@ -251,12 +250,18 @@ body {
     box-shadow: 0px 0px 2px 1px inset #ddd;
 }
 
+.redirect-project:hover .title-project {
+    text-decoration: none;
+}
+
+
 .contain-project:active {
     box-shadow: none;
 }
 
 .image-project {
     max-width: 100%;
+    object-fit: contain;
     height: 238px;
 }
 
@@ -267,6 +272,8 @@ body {
 
 .description-project {
     font-size: 18px;
+    margin-top: 6px;
+
 }
 
 .arrows-projects {
@@ -286,6 +293,29 @@ body {
 .icon-project:hover {
     outline: 2px solid var(--backcolor);
 }
+
+.redirect-project {
+    margin: 29px 12px;
+    text-decoration: none !important;
+}
+
+.redirect-project:hover .image-project {
+    transition: ease all 1.2s;
+    height: 100%;
+}
+
+.redirect-project:hover .title-project {
+    display: none;
+}
+
+.redirect-project:hover .description-project {
+    display: none;
+}
+
+.redirect-project:hover .content-project {
+    display: none;
+}
+
 
 /* GET PROJECT */
 
@@ -369,9 +399,10 @@ body {
     width: 100%;
     padding: 24px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .container-info {
