@@ -269,12 +269,14 @@ body {
     font-size: 28px;
     margin-top: 6px;
     color: #111;
+    text-decoration: none !important;
 }
 
 .description-project {
     font-size: 18px;
     margin-top: 6px;
-
+    color: #111;
+    text-decoration: none !important;
 }
 
 .arrows-projects {
@@ -298,6 +300,7 @@ body {
 .redirect-project {
     margin: 29px 12px;
     text-decoration: none !important;
+    color: #111 !important;
 }
 
 .redirect-project:hover .image-project {
