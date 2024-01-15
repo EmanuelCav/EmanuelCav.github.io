@@ -279,6 +279,13 @@ body {
     text-decoration: none !important;
 }
 
+.content-project {
+    font-size: 16px;
+    margin-top: 6px;
+    color: #111;
+    text-decoration: none !important;
+}
+
 .arrows-projects {
     display: flex;
     justify-content: center;
