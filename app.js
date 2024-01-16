@@ -5,98 +5,26 @@ const containerDropDown = document.getElementById("container-dropdown")
 
 var projectsJS = [{
     title: "Surveys",
-    description: "Stack MERN y Redux y Typescript..",
+    description: "Stack MERN, Redux con TypeScript.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094965/surveys_hkztfb.png",
     content: "Plataforma web para publicar y responder encuestas.",
+    contentMore: "Comparte, publica e invita a personas a participar en encuentras de cualquier tipo",
     link: "https://surveys-ef4r.onrender.com"
 }, {
     title: "Social Media",
-    description: "Stack MERN, Redux y Typescript..",
+    description: "Stack MERN, Redux con TypeScript.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094966/social_media_a7cugi.png",
     content: "Aplicación web de una red social.",
+    contentMore: "Permite publicar archivos multimedia, seguir publicaciones de usuario e interactuar con ellos",
     link: "https://socialmedia-33gt.onrender.com"
 }, {
     title: "Emails",
-    description: "Stack MERN, Sockeo.io y Typescript.",
+    description: "Stack MERN, Sockeo.io con TypeScript.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Emails_x0hbr7.png",
     content: "Plataforma web para el recibo y envio de correos electronicos.",
+    contentMore: "Envía mensajes en tiempo real a cualquier dirreción de correo que este registrado en la plataforma",
     link: "https://emails-kn32.onrender.com"
-}, {
-    title: "Vlogs",
-    description: "Stack MERN, Redux y Typescript.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/vlogs_no6jpp.png",
-    content: "Plataforma web para compatir y observar vlogs.",
-    link: "https://github.com/EmanuelCav/Vlogs"
-}, {
-    title: "Critics",
-    description: "ReactJs, Go, Fiber y MongoDB.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1677073032/critics_exvlur.png",
-    content: "Aplicación web para compartir criticas acerca de un tema en específico.",
-    link: "https://github.com/EmanuelCav/Critics"
-}, {
-    title: "Polls",
-    description: "Stack MERN, Redux.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/polls_xawewm.png",
-    content: "Aplicación web para la creación y particiáción de encuestas.",
-    link: "https://github.com/EmanuelCav/Poll"
-}, {
-    title: "eCommerce Web",
-    description: "Stack MERN, Redux y Bootstrap.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/eCommerce_mog4sq.png",
-    content: "Pagina web de comercio electrónico en linea.",
-    link: "https://github.com/EmanuelCav/eCommerce-Web"
-}, {
-    title: "Quiz Game",
-    description: "Stack MERN.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/quiz_spzclj.png",
-    content: "Aplicación web para la creación y participación en juegos de quiz.",
-    link: "https://github.com/EmanuelCav/Quiz-Game"
-}, {
-    title: "Anecdotes",
-    description: "Stack PERN Y Redux.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/anecdotes_wqshbw.png",
-    content: "Pagina web para compartir anecdotas.",
-    link: "https://github.com/EmanuelCav/Anecdotes"
-}
-    , {
-    title: "Posts",
-    description: "Angular, Mysql y Bootstrap.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/Posts_trglhh.png",
-    content: "Pagina web para la subida de publicaciones.",
-    link: "https://github.com/EmanuelCav/Posts"
-},
-    // {
-    //     title: "Contacts",
-    //     description: "Stack PEAN.",
-    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/contacts_glvfsk.png",
-    //     content: "Plataforma web para la subida de contactos.",
-    //     link: "https://github.com/EmanuelCav/Contacts"
-    // }, {
-    //     title: "Notes",
-    //     description: "Angular, Go, Gorm y Postgres.",
-    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1677073122/notes_exofgs.png",
-    //     content: "Aplicacion web para la creación de notas.",
-    //     link: "https://github.com/EmanuelCav/Notes"
-    // }, {
-    //     title: "World Cup 2022 prediction",
-    //     description: "Javascript, HTML y CSS.",
-    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843280/World_rkgimr.png",
-    //     content: "Plataforma web para simular una predicción del Mundial de Futbol 2022.",
-    //     link: "https://github.com/EmanuelCav/World-Cup-2022"
-    // }, {
-    //     title: "Ta te ti",
-    //     description: "Javascript, HTML y CSS.",
-    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Tateti_ug6xwr.png",
-    //     content: "Pagina web para jugar al ta te ti.",
-    //     link: "https://github.com/EmanuelCav/Tic-Tac-Toe"
-    // }, {
-    //     title: "Papelarios",
-    //     description: "Javascript, HTML y CSS.",
-    //     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/papelarios_ryeizm.png",
-    //     content: "Pagina web de comercio electronico.",
-    //     link: "https://github.com/EmanuelCav/Tienda-Papelarios"
-    // }
-]
+}]
 
 var id = 0
 
@@ -108,6 +36,12 @@ for (var i = 0; i < projectsJS.length; i++) {
     var containProject = document.createElement("div")
     containProject.className = "contain-project"
     containProject.id = id
+
+    var containImageProject = document.createElement("div")
+    containImageProject.className = "contain-image-project"
+
+    var containMedia = document.createElement("div")
+    containMedia.className = "contain-media"
 
     var imageContainProject = document.createElement("img")
     imageContainProject.src = projectsJS[i].image
@@ -127,10 +61,19 @@ for (var i = 0; i < projectsJS.length; i++) {
     contentContainProject.innerHTML += projectsJS[i].content
     contentContainProject.className = "content-project"
 
-    containProject.appendChild(imageContainProject)
-    containProject.appendChild(titleContainProject)
-    containProject.appendChild(descriptionContainProject)
-    containProject.appendChild(contentContainProject)
+    var contentProjectMore = document.createElement("p")
+    contentProjectMore.innerHTML += projectsJS[i].contentMore
+    contentProjectMore.className = "content-project-more"  
+
+    containImageProject.appendChild(imageContainProject)
+
+    containMedia.appendChild(titleContainProject)
+    containMedia.appendChild(descriptionContainProject)
+    containMedia.appendChild(contentContainProject)
+    containMedia.appendChild(contentProjectMore)
+
+    containProject.appendChild(containImageProject)
+    containProject.appendChild(containMedia)
 
     linkProject.setAttribute('href', projectsJS[i].link)
 
