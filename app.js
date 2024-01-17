@@ -1,6 +1,8 @@
 const containerProjects = document.getElementById("container-projects")
 const containerSkills = document.getElementById("container-skills")
 
+const containerNavHeader = document.getElementById("container-nav-header")
+
 const headerIcon = document.getElementById("header-icon")
 const containerDropDown = document.getElementById("container-dropdown")
 
@@ -86,6 +88,58 @@ const skills = [{
     text: "Docker"
 }]
 
+// HEADER
+
+const header = [{
+    es: "Acerca de mí",
+    en: "About",
+    href: "#about"
+}, {
+    es: "Habilidades",
+    en: "Skills",
+    href: "#skills"
+}, {
+    es: "Proyectos",
+    en: "Projects",
+    href: "#projects"
+}, {
+    es: "Contacto",
+    en: "Contact",
+    href: "#contact"
+}]
+
+for (let i = 0; i < header.length; i++) {
+    
+    const redirectHeader = document.createElement("a")
+    redirectHeader.href = header[i].href
+    redirectHeader.className = "redirect-header"
+
+    const redirectDropdown = document.createElement("a")
+    redirectDropdown.href = header[i].href
+    redirectDropdown.className = "redirect-header"
+
+    const textHeader = document.createElement("p")
+    textHeader.innerHTML = header[i].es
+    textHeader.className = "text-header no-select"
+
+    const textDropdown = document.createElement("p")
+    textDropdown.innerHTML = header[i].es
+    textDropdown.className = "text-drowdown no-select"
+
+    redirectHeader.appendChild(textHeader)
+    redirectDropdown.appendChild(textDropdown)
+
+    containerNavHeader.appendChild(redirectHeader)
+    containerDropDown.appendChild(redirectDropdown)
+    
+}
+
+// ABOUT ME
+
+
+
+// SKILLS
+
 for (let i = 0; i < skills.length; i++) {
 
     var containSkill = document.createElement("div")
@@ -107,6 +161,8 @@ for (let i = 0; i < skills.length; i++) {
     containerSkills.appendChild(containSkill)
 
 }
+
+// PROJECTS
 
 var id = 0
 

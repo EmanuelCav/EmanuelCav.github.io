@@ -130,7 +130,10 @@ body {
     width: 100%;
     top: 72px;
     padding: 12px;
+    left: 0;
     display: none;
+    animation: widthDropdown 1s;
+    max-height: 100%;
 }
 
 .text-drowdown {
@@ -642,3 +645,14 @@ body {
         display: block;
     }
 }
+
+@keyframes widthDropdown {
+    from {
+        top: 45px;
+        max-height: 0;
+    }
+    to {
+        top: 72px;
+        max-height: 100%;
+    }
+  }
