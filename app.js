@@ -6,25 +6,43 @@ const containerDropDown = document.getElementById("container-dropdown")
 
 const projectsJS = [{
     title: "Surveys",
-    description: "Stack MERN, Redux con TypeScript.",
+    description: "Stack MERN, Redux & TypeScript",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094965/surveys_hkztfb.png",
-    content: "Plataforma web para publicar y responder encuestas.",
-    contentMore: "Comparte, publica e invita a personas a participar en encuentras de cualquier tipo",
-    link: "https://surveys-ef4r.onrender.com"
+    link: "https://surveys-ef4r.onrender.com",
+    es: {
+        content: "Plataforma web para publicar y responder encuestas",
+        contentMore: "Comparte, publica e invita a personas a participar en encuestras de cualquier tipo",
+    },
+    en: {
+        content: "Web platform to publish and respond to surveys",
+        contentMore: "Share, publish and invite people to participate in meetings of any type",
+    }
 }, {
     title: "Social Media",
-    description: "Stack MERN, Redux con TypeScript.",
+    description: "Stack MERN, Redux & TypeScript",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1705094966/social_media_a7cugi.png",
-    content: "Aplicación web de una red social.",
-    contentMore: "Permite publicar archivos multimedia, seguir publicaciones de usuario e interactuar con ellos",
-    link: "https://socialmedia-33gt.onrender.com"
+    link: "https://socialmedia-33gt.onrender.com",
+    es: {
+        content: "Aplicación web de una red social",
+        contentMore: "Permite publicar archivos multimedia, seguir publicaciones de usuario e interactuar con ellos",
+    },
+    en: {
+        content: "Web application of a social network",
+        contentMore: "Allows you to publish multimedia files, follow user posts and interact with them",
+    }
 }, {
     title: "Emails",
-    description: "Stack MERN, Sockeo.io con TypeScript.",
+    description: "Stack MERN, Sockeo.io & TypeScript.",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1671843279/Emails_x0hbr7.png",
-    content: "Plataforma web para el recibo y envio de correos electronicos.",
-    contentMore: "Envía mensajes en tiempo real a cualquier dirreción de correo que este registrado en la plataforma",
-    link: "https://emails-kn32.onrender.com"
+    link: "https://emails-kn32.onrender.com",
+    es: {
+        content: "Plataforma web para el recibo y envío de correos electrónicos",
+        contentMore: "Envía mensajes en tiempo real a cualquier dirrección de correo que este registrado en la plataforma",
+    },
+    en: {
+        content: "Web platform for receiving and sending emails",
+        contentMore: "Send messages in real time to any email address that is registered on the platform",
+    }
 }]
 
 const skills = [{
@@ -123,11 +141,11 @@ for (var i = 0; i < projectsJS.length; i++) {
 
 
     var contentContainProject = document.createElement("p")
-    contentContainProject.innerHTML += projectsJS[i].content
+    contentContainProject.innerHTML += projectsJS[i].es.content
     contentContainProject.className = "content-project"
 
     var contentProjectMore = document.createElement("p")
-    contentProjectMore.innerHTML += projectsJS[i].contentMore
+    contentProjectMore.innerHTML += projectsJS[i].es.contentMore
     contentProjectMore.className = "content-project-more"
 
     containImageProject.appendChild(imageContainProject)

@@ -160,6 +160,7 @@ body {
     background: #ffffff;
     max-width: 1200px;
     margin: auto;
+    /* background: #222; */
 }
 
 /* MAIN */
@@ -258,7 +259,7 @@ body {
     -ms-word-wrap: break-word;
     text-align: center;
     border-radius: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(87, 167, 241, 0.2);
     width: 225px;
 }
 
@@ -299,6 +300,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #ffffff;
 }
 
 .contain-media {
@@ -476,6 +478,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     border-right: 1px solid #ffffff;
     word-wrap: break-word;
