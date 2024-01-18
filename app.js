@@ -45,6 +45,19 @@ const projectsJS = [{
         content: "Web platform for receiving and sending emails",
         contentMore: "Send messages in real time to any email address that is registered on the platform",
     }
+}, {
+    title: "Argentina Quiz",
+    description: "Node.js, MongoDB, React Native & TypeScript",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1702078674/wks5oaatxk5w2r4aj5zr.png",
+    link: "https://play.google.com/store/apps/details?id=com.argentinaquiz.triviagame",
+    es: {
+        content: "Aplicación móvil de un juego de preguntas y respuestas de Argentina",
+        contentMore: "Argentina Quiz es un juego educativo y de entretenimiento de un Trivia donde vas a encontrar todo tipo de preguntas acerca del país."
+    },
+    en: {
+        content: "Mobile application of a question and answer game from Argentina",
+        contentMore: "Argentina Quiz is an educational and entertaining Trivia game where you will find all kinds of questions about the country."
+    }
 }]
 
 const skills = [{
@@ -109,7 +122,7 @@ const header = [{
 }]
 
 for (let i = 0; i < header.length; i++) {
-    
+
     const redirectHeader = document.createElement("a")
     redirectHeader.href = header[i].href
     redirectHeader.className = "redirect-header"
@@ -131,7 +144,7 @@ for (let i = 0; i < header.length; i++) {
 
     containerNavHeader.appendChild(redirectHeader)
     containerDropDown.appendChild(redirectDropdown)
-    
+
 }
 
 // ABOUT ME
