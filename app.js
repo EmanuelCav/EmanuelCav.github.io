@@ -1,10 +1,23 @@
-const containerProjects = document.getElementById("container-projects")
-const containerSkills = document.getElementById("container-skills")
-
 const containerNavHeader = document.getElementById("container-nav-header")
-
 const headerIcon = document.getElementById("header-icon")
 const containerDropDown = document.getElementById("container-dropdown")
+
+const sustitleMain = document.getElementById("subtitle-main")
+const about = document.getElementById("about")
+const aboutTitle = document.getElementById("about-title")
+const textAbout = document.getElementById("text-about")
+
+const containerSkills = document.getElementById("container-skills")
+const skillsTitle = document.getElementById("skills-title")
+
+const projectsTitle = document.getElementById("projects-title")
+const containerProjects = document.getElementById("container-projects")
+
+const contactTitle = document.getElementById("contact-title")
+
+const portfolioText = document.getElementById("portfolio-text")
+
+localStorage.setItem("lg", JSON.stringify("es"))
 
 const projectsJS = [{
     title: "Surveys",
@@ -52,7 +65,7 @@ const projectsJS = [{
     link: "https://play.google.com/store/apps/details?id=com.argentinaquiz.triviagame",
     es: {
         content: "Aplicación móvil de un juego de preguntas y respuestas de Argentina",
-        contentMore: "Argentina Quiz es un juego educativo y de entretenimiento de un Trivia donde vas a encontrar todo tipo de preguntas acerca del país."
+        contentMore: "Juego educativo y de entretenimiento de un Trivia donde vas a encontrar todo tipo de preguntas acerca del país."
     },
     en: {
         content: "Mobile application of a question and answer game from Argentina",
@@ -177,8 +190,6 @@ for (let i = 0; i < skills.length; i++) {
 
 // PROJECTS
 
-var id = 0
-
 for (var i = 0; i < projectsJS.length; i++) {
 
     var linkProject = document.createElement('a')
@@ -186,7 +197,6 @@ for (var i = 0; i < projectsJS.length; i++) {
 
     var containProject = document.createElement("div")
     containProject.className = "contain-project hvr-bounce-in"
-    containProject.id = id
 
     var containImageProject = document.createElement("div")
     containImageProject.className = "contain-image-project"
@@ -231,8 +241,6 @@ for (var i = 0; i < projectsJS.length; i++) {
 
     linkProject.appendChild(containProject)
     containerProjects.appendChild(linkProject)
-
-    id++
 }
 
 var isDrowDown = false
