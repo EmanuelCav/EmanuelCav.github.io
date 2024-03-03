@@ -59,7 +59,7 @@ function main() {
         title.innerText = "About me"
     })
     textAbout.innerText = `I am a student of Information Systems Engineering and I am interested in the IT world.
-    I am focused on web development with a desire to work on projects, obtain achievements and learn new tools. I have worked in several projects according to the knowledge acquired.`
+    I am focused on web and mobile development with a desire to work on projects, obtain achievements and learn new tools. I have worked in several projects according to the knowledge acquired.`
 
     skillsTitle.forEach((title) => {
         title.innerText = "Skills"
@@ -108,6 +108,7 @@ headerIcon.addEventListener("click", () => {
     }
 })
 
+
 function showHeader() {
 
     for (let i = 0; i < header.length; i++) {
@@ -144,6 +145,9 @@ function showHeader() {
 
     }
 
+}
+
+const setLanguage = () => {
     const language = document.createElement("p")
     language.id = "language_item"
     language.className = "icon-language"
@@ -152,35 +156,36 @@ function showHeader() {
     } else {
         language.innerHTML = "en🠻"
     }
-    // containerNavActions.prepend(language)
-
+    containerNavActions.prepend(language)
 }
 
 showHeader()
+setLanguage()
 
-// const languageItem = document.getElementById("language_item")
+const languageItem = document.getElementById("language_item")
 
-// languageItem.addEventListener("click", () => {
+languageItem.addEventListener("click", () => {
 
-//     if (containerLanguageDropdown.style.display === "block") {
-//         containerLanguageDropdown.style.display = "none"
-//         containerLanguageDropdown.children[0].remove()
-//         return
-//     }
+    if (containerLanguageDropdown.style.display === "block") {
+        containerLanguageDropdown.style.display = "none"
+        containerLanguageDropdown.children[0].remove()
+        return
+    }
 
-//     containerLanguageDropdown.style.display = "block"
-//     const anotherLanguage = document.createElement("p")
-//     anotherLanguage.className = "text-language-header"
-//     anotherLanguage.innerText = JSON.parse(localStorage.getItem("lg")) === "es" ? "en" : "es"
-//     containerLanguageDropdown.appendChild(anotherLanguage)
+    containerLanguageDropdown.style.display = "block"
+    const anotherLanguage = document.createElement("p")
+    anotherLanguage.className = "text-language-header"
+    anotherLanguage.innerText = JSON.parse(localStorage.getItem("lg")) === "es" ? "en" : "es"
+    containerLanguageDropdown.appendChild(anotherLanguage)
 
-// })
 
-// containerLanguageDropdown.addEventListener("click", () => {
-//     containerLanguageDropdown.style.display = "none"
-//     containerLanguageDropdown.children[0].remove()
-//     // translate()
-// })
+})
+
+containerLanguageDropdown.addEventListener("click", () => {
+    containerLanguageDropdown.style.display = "none"
+    containerLanguageDropdown.children[0].remove()
+    translate()
+})
 
 // SKILLS
 
@@ -197,8 +202,14 @@ const skills = [{
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707957793/portfolio/tailwind_ju831c.png",
     text: "Tailwind"
 }, {
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707957759/portfolio/JavaScript_wpve8i.png",
-    text: "JavaScript"
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709479982/blog/material_ui_ki6cwg.png",
+    text: "Material UI"
+}, {
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1708370129/blog/go_fbovrh.png",
+    text: "Go"
+}, {
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1708368255/blog/python_xkb3jq.png",
+    text: "Python"
 }, {
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707957794/portfolio/Typescript_akfrax.png",
     text: "TypeScript"
@@ -381,15 +392,45 @@ showProjects()
 
 function translate() {
 
+    let currectLanguage
+
     if (JSON.parse(localStorage.getItem("lg")) === "es") {
-        localStorage.setItem("lg", "en")
+        currectLanguage = JSON.stringify("en")
+        localStorage.setItem("lg", currectLanguage)
     } else {
-        localStorage.setItem("lg", "es")
+        currectLanguage = JSON.stringify("es")
+        localStorage.setItem("lg", currectLanguage)
     }
 
-    // main()
-    // showHeader()
-    // showSkills()
-    // showProjects()
+    containerProjects.replaceChildren()
+    containerSkills.replaceChildren()
+    containerDropDown.replaceChildren()
+    containerNavHeader.replaceChildren()
+    containerNavActions.children[0].innerHTML = `${JSON.parse(currectLanguage)}🠻`
+
+    sustitleMain.innerText = ""
+    about.innerText = ""
+
+    aboutTitle.forEach((title) => {
+        title.innerText = ""
+    })
+    textAbout.innerText = ""
+
+    skillsTitle.forEach((title) => {
+        title.innerText = ""
+    })
+    projectsTitle.forEach((title) => {
+        title.innerText = ""
+    })
+    contactTitle.forEach((title) => {
+        title.innerText = ""
+    })
+
+    portfolioText.innerText = ""
+
+    main()
+    showHeader()
+    showSkills()
+    showProjects()
 
 }
