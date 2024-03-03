@@ -268,56 +268,85 @@ showSkills()
 // PROJECTS
 
 const projectsJS = [{
-    title: "Surveys",
-    description: "Stack MERN, Redux & TypeScript",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707959262/portfolio/survey_ue6umc.png",
-    link: "https://surveys-ef4r.onrender.com",
+    title: "Surfrage",
+    description: "Stack PERN, Material UI Redux, TypeScript & Prisma",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490095/portfolio/icon_qfb1dl.png",
+    link: "https://github.com/EmanuelCav/Surveys",
     es: {
-        content: "Plataforma web para publicar y responder encuestas",
+        content: "Aplicación web destinada a la creación y participación de encuestas",
         contentMore: "Comparte, publica e invita a personas a participar en encuestras de cualquier tipo",
     },
     en: {
-        content: "Web platform to publish and respond to surveys",
+        content: "Web application for the creation and participation in surveys",
         contentMore: "Share, publish and invite people to participate in meetings of any type",
     }
 }, {
-    title: "Social Media",
-    description: "Stack MERN, Redux & TypeScript",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707959291/portfolio/index_mqeqmc.png",
-    link: "https://socialmedia-33gt.onrender.com",
+    title: "A Lo Junior",
+    description: "Next.js, Tailwind CSS, Zustand, TypeScript, Go, Fiber & MongoDB",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490527/portfolio/alojunior_lexyoe.png",
+    link: "https://github.com/EmanuelCav/alojuniordev",
     es: {
-        content: "Aplicación web de una red social",
-        contentMore: "Permite publicar archivos multimedia, seguir publicaciones de usuario e interactuar con ellos",
+        content: "Plataforma web orientada a encontrar y compartir proyectos y tutoriales en el campo IT",
+        contentMore: "Encuentra y comparte experiencia en herramientas de desarrollo como programación, frameworks y mucho más",
     },
     en: {
-        content: "Web application of a social network",
-        contentMore: "Allows you to publish multimedia files, follow user posts and interact with them",
+        content: "Web platform oriented to find and share projects and tutorials in the IT field",
+        contentMore: "Find and share expertise in development tools such as programming, frameworks and much more",
     }
-}, {
-    title: "Emails",
-    description: "Stack MERN, Sockeo.io & TypeScript.",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707957753/portfolio/Emails_cnynfg.png",
-    link: "https://emails-kn32.onrender.com",
+}, 
+// {
+//     title: "Social Media",
+//     description: "Stack MERN, Redux & TypeScript",
+//     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707959291/portfolio/index_mqeqmc.png",
+//     link: "https://socialmedia-33gt.onrender.com",
+//     es: {
+//         content: "Aplicación web de una red social",
+//         contentMore: "Permite publicar archivos multimedia, seguir publicaciones de usuario e interactuar con ellos",
+//     },
+//     en: {
+//         content: "Web application of a social network",
+//         contentMore: "Allows you to publish multimedia files, follow user posts and interact with them",
+//     }
+// }, 
+// {
+//     title: "Emails",
+//     description: "Stack MERN, Sockeo.io & TypeScript.",
+//     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707957753/portfolio/Emails_cnynfg.png",
+//     link: "https://emails-kn32.onrender.com",
+//     es: {
+//         content: "Plataforma web para el recibo y envío de correos electrónicos",
+//         contentMore: "Envía mensajes en tiempo real a cualquier dirrección de correo que este registrado en la plataforma",
+//     },
+//     en: {
+//         content: "Web platform for receiving and sending emails",
+//         contentMore: "Send messages in real time to any email address that is registered on the platform",
+//     }
+// }, 
+{
+    title: "Cultura General - Trivia",
+    description: "React Native, Redux, TypeScript, Node.js, MongoDB",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490947/culture/icon_kfyizi.png",
+    link: "https://github.com/EmanuelCav/general_culture_quiz",
     es: {
-        content: "Plataforma web para el recibo y envío de correos electrónicos",
-        contentMore: "Envía mensajes en tiempo real a cualquier dirrección de correo que este registrado en la plataforma",
+        content: "Aplicación móvil de preguntas y respuestas de cultura general",
+        contentMore: "Cuenta cuestionarios de cualquier tipo de pregunta de numerosas categorías como geografía, historia, ciencia, arte y mucho más"
     },
     en: {
-        content: "Web platform for receiving and sending emails",
-        contentMore: "Send messages in real time to any email address that is registered on the platform",
+        content: "Mobile application for general culture questions and answers",
+        contentMore: "It features quizzes of any type of question from numerous categories such as geography, history, science, art and much more"
     }
 }, {
     title: "Argentina Quiz",
-    description: "Node.js, MongoDB, React Native & TypeScript",
+    description: "React Native, Redux, TypeScript, Node.js, MongoDB",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1706790450/favicon_tvx4ge.png",
     link: "https://play.google.com/store/apps/details?id=com.argentinaquiz.triviagame",
     es: {
         content: "Aplicación móvil de un juego de preguntas y respuestas de Argentina",
-        contentMore: "Juego educativo y de entretenimiento de un Trivia donde vas a encontrar todo tipo de preguntas acerca del país."
+        contentMore: "Juego educativo y de entretenimiento de un Trivia donde vas a encontrar todo tipo de preguntas acerca del país"
     },
     en: {
         content: "Mobile application of a question and answer game from Argentina",
-        contentMore: "Argentina Quiz is an educational and entertaining Trivia game where you will find all kinds of questions about the country."
+        contentMore: "Argentina Quiz is an educational and entertaining Trivia game where you will find all kinds of questions about the country"
     }
 }]
 
