@@ -339,7 +339,7 @@ const projectsJS = [{
     title: "Argentina Quiz",
     description: "React Native, Redux, TypeScript, Node.js, MongoDB",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1706790450/favicon_tvx4ge.png",
-    link: "https://play.google.com/store/apps/details?id=com.argentinaquiz.triviagame",
+    link: "https://github.com/EmanuelCav/Argentina-Geo",
     es: {
         content: "Aplicación móvil de un juego de preguntas y respuestas de Argentina",
         contentMore: "Juego educativo y de entretenimiento de un Trivia donde vas a encontrar todo tipo de preguntas acerca del país"
