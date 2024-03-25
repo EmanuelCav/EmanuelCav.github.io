@@ -27,14 +27,13 @@ function main() {
 
     if (JSON.parse(localStorage.getItem("lg")) === "es") {
 
-        sustitleMain.innerText = "Programador Full-Stack"
+        sustitleMain.innerText = "Programador Full Stack"
         about.innerText = `¡Hola! Bienvenido a mi portafolio. En esta página te enseñare acerca de mi, sobre mis habilidades en la programación y de mi experiencia en proyectos realizados.`
 
         aboutTitle.forEach((title) => {
             title.innerText = "Acerca de mí"
         })
-        textAbout.innerText = `Soy estudiante de la carrera de Ingenieria en Sistemas de Información y estoy interesado en el mundo IT. 
-        Me encuentro orientado en el desarrollo web y móvil con voluntad de trabajar en proyectos, obtener logros y aprender nuevas herramientas. He trabajado en múltiples proyectos con acorde a los conocimientos adquiridos.`
+        textAbout.innerText = `Desarrollador de software Full Stack con React, React Native, Node.js, TypeScript y Golang. Disfruto llevar a cabo proyectos de principio a fin donde fui adquiriendo experiencia y conocimientos. Estoy con voluntad de emprender y trabajar en proyectos, demostrar mis habilidades y conocimientos, aprender nuevas herramientas y llevar mi experiencia a otro nivel.`
 
         skillsTitle.forEach((title) => {
             title.innerText = "Habilidades"
@@ -52,14 +51,13 @@ function main() {
         return
     }
 
-    sustitleMain.innerText = "Full-Stack Programmer"
-    about.innerText = `Hello! Welcome to my portfolio. On this page I will teach you about me, about my programming skills and my experience in completed projects.`
+    sustitleMain.innerText = "Full Stack Programmer"
+    about.innerText = `Welcome to my portfolio. On this page I will teach you about me, about my programming skills and my experience in completed projects.`
 
     aboutTitle.forEach((title) => {
         title.innerText = "About me"
     })
-    textAbout.innerText = `I am a student of Information Systems Engineering and I am interested in the IT world.
-    I am focused on web and mobile development with a desire to work on projects, obtain achievements and learn new tools. I have worked in several projects according to the knowledge acquired.`
+    textAbout.innerText = `Full Stack software developer with React, React Native, Node.js, TypeScript and Golang. I enjoy carrying out projects from start to finish where I gained experience and knowledge. I am willing to undertake and work on projects, demonstrate my skills and knowledge, learn new tools and take my experience to another level.`
 
     skillsTitle.forEach((title) => {
         title.innerText = "Skills"
