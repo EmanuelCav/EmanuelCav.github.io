@@ -266,6 +266,19 @@ showSkills()
 // PROJECTS
 
 const projectsJS = [{
+    title: "Mapa de Argentina - Quiz",
+    description: "React Native, TypeScript & Context",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1714063248/portfolio/logo_2_luwfnx.png",
+    link: "https://github.com/EmanuelCav/argentina_geography",
+    es: {
+        content: "Aplicación móvil educativa de la división política y geográfica de Argentina",
+        contentMore: "Contiene todo tipo de información de geografia argentina con el fin de estudiar y aprender"
+    },
+    en: {
+        content: "Educational mobile application of the political and geographic division of Argentina",
+        contentMore: "Contains all kind of information about argentine geography in order to study and learn."
+    }
+}, {
     title: "Surfrage",
     description: "Stack PERN, Material UI Redux, TypeScript & Prisma",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490095/portfolio/icon_qfb1dl.png",
@@ -279,59 +292,30 @@ const projectsJS = [{
         contentMore: "Share, publish and invite people to participate in meetings of any type",
     }
 }, {
-    title: "A Lo Junior",
+    title: "Graspper",
     description: "Next.js, Tailwind CSS, Zustand, TypeScript, Go, Fiber & MongoDB",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490527/portfolio/alojunior_lexyoe.png",
     link: "https://github.com/EmanuelCav/alojuniordev",
     es: {
-        content: "Plataforma web orientada a encontrar y compartir proyectos y tutoriales en el campo IT",
-        contentMore: "Encuentra y comparte experiencia en herramientas de desarrollo como programación, frameworks y mucho más",
+        content: "Plataforma web orientada a la creación y gestión de cursos y blogs educativos",
+        contentMore: "Permite crear y formar parte de las tendencias educativas para fomentar una comunidad de aprendizaje activa",
     },
     en: {
-        content: "Web platform oriented to find and share projects and tutorials in the IT field",
-        contentMore: "Find and share expertise in development tools such as programming, frameworks and much more",
+        content: "Web platform oriented to the creation and management of educational courses and blogs",
+        contentMore: "Create and be part of educational trends to foster an active learning community",
     }
-}, 
-// {
-//     title: "Social Media",
-//     description: "Stack MERN, Redux & TypeScript",
-//     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707959291/portfolio/index_mqeqmc.png",
-//     link: "https://socialmedia-33gt.onrender.com",
-//     es: {
-//         content: "Aplicación web de una red social",
-//         contentMore: "Permite publicar archivos multimedia, seguir publicaciones de usuario e interactuar con ellos",
-//     },
-//     en: {
-//         content: "Web application of a social network",
-//         contentMore: "Allows you to publish multimedia files, follow user posts and interact with them",
-//     }
-// }, 
-// {
-//     title: "Emails",
-//     description: "Stack MERN, Sockeo.io & TypeScript.",
-//     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1707957753/portfolio/Emails_cnynfg.png",
-//     link: "https://emails-kn32.onrender.com",
-//     es: {
-//         content: "Plataforma web para el recibo y envío de correos electrónicos",
-//         contentMore: "Envía mensajes en tiempo real a cualquier dirrección de correo que este registrado en la plataforma",
-//     },
-//     en: {
-//         content: "Web platform for receiving and sending emails",
-//         contentMore: "Send messages in real time to any email address that is registered on the platform",
-//     }
-// }, 
-{
-    title: "Cultura General - Trivia",
-    description: "React Native, Redux, TypeScript, Node.js, MongoDB",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490947/culture/icon_kfyizi.png",
-    link: "https://github.com/EmanuelCav/general_culture_quiz",
+}, {
+    title: "CupCraft",
+    description: "React, Redux, TypeScript, Node.js & MongoDB",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1716217015/portfolio/logo_tjwhut.png",
+    link: "https://github.com/EmanuelCav/tournament_generator",
     es: {
-        content: "Aplicación móvil de preguntas y respuestas de cultura general",
-        contentMore: "Cuenta cuestionarios de cualquier tipo de pregunta de numerosas categorías como geografía, historia, ciencia, arte y mucho más"
+        content: "Plataforma móvil y web para la gestión y participación de eventos deportivos",
+        contentMore: "Permite la creación de torneos de diferentes formatos como todos contra todos, fase de grupos, formato suizo y eliminación directa"
     },
     en: {
-        content: "Mobile application for general culture questions and answers",
-        contentMore: "It features quizzes of any type of question from numerous categories such as geography, history, science, art and much more"
+        content: "Mobile and web platform for the management and participation in sporting events.",
+        contentMore: "Allows the creation of tournaments of different formats such as all against all, group stage, Swiss format and direct elimination"
     }
 }, {
     title: "Argentina Quiz",
