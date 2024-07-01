@@ -279,6 +279,19 @@ const projectsJS = [{
         contentMore: "Contains all kind of information about argentine geography in order to study and learn."
     }
 }, {
+    title: "CupCraft",
+    description: "React, Redux, TypeScript, Node.js & MongoDB",
+    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1716217015/portfolio/logo_tjwhut.png",
+    link: "https://github.com/EmanuelCav/tournament_generator",
+    es: {
+        content: "Plataforma web y móvil para la gestión y participación de eventos deportivos",
+        contentMore: "Permite la creación de torneos de diferentes formatos como todos contra todos, fase de grupos, formato suizo y eliminación directa"
+    },
+    en: {
+        content: "Mobile and web platform for the management and participation in sporting events.",
+        contentMore: "Allows the creation of tournaments of different formats such as all against all, group stage, Swiss format and direct elimination"
+    }
+}, {
     title: "Surfrage",
     description: "Stack PERN, Material UI Redux, TypeScript & Prisma",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490095/portfolio/icon_qfb1dl.png",
@@ -291,33 +304,22 @@ const projectsJS = [{
         content: "Web application for the creation and participation in surveys",
         contentMore: "Share, publish and invite people to participate in meetings of any type",
     }
-}, {
-    title: "Graspper",
-    description: "Next.js, Tailwind CSS, Zustand, TypeScript, Go, Fiber & MongoDB",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490527/portfolio/alojunior_lexyoe.png",
-    link: "https://github.com/EmanuelCav/alojuniordev",
-    es: {
-        content: "Plataforma web orientada a la creación y gestión de cursos y blogs educativos",
-        contentMore: "Permite crear y formar parte de las tendencias educativas para fomentar una comunidad de aprendizaje activa",
-    },
-    en: {
-        content: "Web platform oriented to the creation and management of educational courses and blogs",
-        contentMore: "Create and be part of educational trends to foster an active learning community",
-    }
-}, {
-    title: "CupCraft",
-    description: "React, Redux, TypeScript, Node.js & MongoDB",
-    image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1716217015/portfolio/logo_tjwhut.png",
-    link: "https://github.com/EmanuelCav/tournament_generator",
-    es: {
-        content: "Plataforma móvil y web para la gestión y participación de eventos deportivos",
-        contentMore: "Permite la creación de torneos de diferentes formatos como todos contra todos, fase de grupos, formato suizo y eliminación directa"
-    },
-    en: {
-        content: "Mobile and web platform for the management and participation in sporting events.",
-        contentMore: "Allows the creation of tournaments of different formats such as all against all, group stage, Swiss format and direct elimination"
-    }
-}, {
+},
+// {
+//     title: "Graspper",
+//     description: "Next.js, Tailwind CSS, Zustand, TypeScript, Go, Fiber & MongoDB",
+//     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1709490527/portfolio/alojunior_lexyoe.png",
+//     link: "https://github.com/EmanuelCav/alojuniordev",
+//     es: {
+//         content: "Plataforma web orientada a la creación y gestión de cursos y blogs educativos",
+//         contentMore: "Permite crear y formar parte de las tendencias educativas para fomentar una comunidad de aprendizaje activa",
+//     },
+//     en: {
+//         content: "Web platform oriented to the creation and management of educational courses and blogs",
+//         contentMore: "Create and be part of educational trends to foster an active learning community",
+//     }
+// }, 
+{
     title: "Argentina Quiz",
     description: "React Native, Redux, TypeScript, Node.js, MongoDB",
     image: "https://res.cloudinary.com/projects-emanuek/image/upload/v1706790450/favicon_tvx4ge.png",
